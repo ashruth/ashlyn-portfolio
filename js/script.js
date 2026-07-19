@@ -80,7 +80,7 @@ function initScrollEffects() {
     const mm = String(Math.floor((totalFrames / 6) % 60)).padStart(2, "0");
     const ss = String(Math.floor(totalFrames % 60)).padStart(2, "0");
     const ff = String(Math.floor((pct * 10) % 10)).padStart(2, "0");
-    recTimecode.textContent = `${hh}:${mm}:${ss}:${ff}`;
+    recTimecode.textContent = `${hh}:${mm}:${ss}`;
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
